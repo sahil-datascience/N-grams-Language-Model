@@ -4,42 +4,17 @@
 ###### Predict using Probability Matrix
 #############################################
 
-predict_prob <- function(sentence, prob_matrix) {
-        
-        #clean and tokenise sentence
-        sentence <- filter_profanity(clean_text(sentence))
-        
-        #sentence length
-        sen_n <- length(sentence[[1]])
-        
-        #n-grams length
-        n <- str_count(rownames(prob_matrix)[1], "_") + 1
-        
-        if (sen_n > n){
-                ngram <- str_c(tail(sentence[[1]], n), collapse = "_")
-                
-                prediction <- tail(sort(prob_matrix[ngram, ]), 4)
-                
-        } else { 
-                print("Last N Gram Not found")
-        }
-        
-   return(prediction)     
-}
-
-
-
+##Sample Pre-requisites
 ### Create Probability Matrices for various N-grams
 bigram_prob_matrix <- create_prob_matrix(create_count_matrix(bigrams))
 trigram_prob_matrix <- create_prob_matrix(create_count_matrix(trigrams))
 #fourgram_prob_matrix <- create_prob_matrix(create_count_matrix(fourgrams)) #time-consuming
 
-sentence <- "My name is Sahil I like to the"
-
-predict_prob("a case of", prob_matrix)
-
 probMatList <- list(bigram_prob_matrix, trigram_prob_matrix)
 
+#########################
+#### The Function #######
+#########################
 predict_next_prob <- function(sentence, prob_matrix_list, n_result = 4) {
         
         #clean and tokenise sentence
