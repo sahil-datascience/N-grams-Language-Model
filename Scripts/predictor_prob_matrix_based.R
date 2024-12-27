@@ -5,12 +5,8 @@
 #############################################
 
 ##Sample Pre-requisites
-### Create Probability Matrices for various N-grams
-bigram_prob_matrix <- create_prob_matrix(create_count_matrix(bigrams))
-trigram_prob_matrix <- create_prob_matrix(create_count_matrix(trigrams))
-#fourgram_prob_matrix <- create_prob_matrix(create_count_matrix(fourgrams)) #time-consuming
 
-probMatList <- list(bigram_prob_matrix, trigram_prob_matrix)
+probMatList <- list(bigram_prob, trigram_prob, fourgram_prob)
 
 #########################
 #### The Function #######
@@ -57,4 +53,4 @@ predict_next_prob <- function(sentence, prob_matrix_list, n_result = 4) {
         return(prediction)
 }
 
-predict_next_prob("name", prob_matrix_list = probMatList, n_result = 4)
+predict_next_prob("a case of", prob_matrix_list = probMatList, n_result = 10)
