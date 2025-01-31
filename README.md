@@ -1,6 +1,6 @@
-This repository is associated to a capstone project under the Data Science Specialisation course.
+This repository is associated to a [capstone project[(https://www.coursera.org/learn/data-science-project/home/info) under the Data Science Specialisation course.
 
-link to the app: https://sahil-shrma.shinyapps.io/Course_Assignment_App/
+[Link to App](https://sahil-shrma.shinyapps.io/next_word_predictor/)
 
-link to presentation slides descibing model training: https://rpubs.com/sahil_95/1267328
+[link to presentation slides descibing model training] (https://rpubs.com/sahil_95/1267328)
 
