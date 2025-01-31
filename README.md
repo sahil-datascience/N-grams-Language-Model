@@ -2,5 +2,7 @@ This repository is associated to a [capstone project](https://www.coursera.org/l
 
 [Link to App](https://sahil-shrma.shinyapps.io/next_word_predictor/)
 
-[link to presentation slides descibing model training](https://rpubs.com/sahil_95/1267328)
+Link to [presentation slides](https://rpubs.com/sahil_95/1267328) descibing model training.
+
+
 
