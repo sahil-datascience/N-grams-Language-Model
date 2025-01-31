@@ -5,4 +5,6 @@ This repository is associated to a [capstone project](https://www.coursera.org/l
 Link to [presentation slides](https://rpubs.com/sahil_95/1267328) descibing model training.
 
 
+[Exploratory Data Analysis (EDA) report](https://rpubs.com/sahil_95/EDA_DataScience_Capstone)
+
 
